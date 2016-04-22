@@ -592,7 +592,7 @@ Template.main.onRendered(function() {
 
 
   $("#fluxograma-toggle").mouseover(function() {
-    $(this).attr("src", "images/conteudo/fluxograma2.png");
+    $(this).attr("src", "images/conteudo/fluxograma.png");
   })
 
   $("#fluxograma-toggle").mouseleave(function() {
