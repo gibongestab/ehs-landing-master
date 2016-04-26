@@ -108,21 +108,18 @@ li i.fa-circle{
   height:350px !important;
 }
 
-.footer_end{
-  margin-top:0px;
-}
 
 .grande{
   font-size:150px;
 }
 
 
-/*- CALCULADORA */
+/*- CALCULADTOR */
 
 .calculator {
-  background-color: #f47522;
+  background-color: rgba(244, 117, 34, 0.9);
   border-radius: 10px;
-  width: 1000px;
+  width: 87%;
   padding: 12px;
   margin: auto;
   margin-top: 30px;
@@ -172,10 +169,19 @@ li i.fa-circle{
 }
 
 .cell-union {
-  width: 800px;
+  width: 110%;
 }
 
 .cell-border {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
+}
+
+/*---- FOOTER ----*/
+
+.footer_end {
+    background-color: #282828;
+    margin-top:0px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
