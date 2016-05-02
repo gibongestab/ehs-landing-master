@@ -143,6 +143,9 @@ li i.fa-circle{
 
 .calculator-cell li,
 .calculator-cell div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
   min-height: 46px;
   padding: 10px;
   margin: 1px 0px 10px 0px;
@@ -185,4 +188,9 @@ li i.fa-circle{
     margin-top:0px;
     padding-top: 45px;
     padding-bottom: 45px;
+}
+
+
+.tooltip-inner {
+    max-width: 60%;
 }

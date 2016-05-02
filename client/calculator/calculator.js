@@ -52,7 +52,8 @@ Template.calculator.onCreated(function() {
 	})
 
 	this.autorun(() => {
-		this.valorPorHoraVH.set(this.vh.get() * VH_FACTOR / this.horasTrabalhadas.get());
+
+		this.valorPorHoraVH.set(!this.horasTrabalhadas.get() ? 0 : this.vh.get() * VH_FACTOR / this.horasTrabalhadas.get());
 	})
 
 	this.autorun(() => {
@@ -60,7 +61,7 @@ Template.calculator.onCreated(function() {
 	})
 
 	this.autorun(() => {
-		this.valorPorHoraVA.set(this.va.get() * VA_FACTOR / this.horasTrabalhadas.get());
+		this.valorPorHoraVA.set(!this.horasTrabalhadas.get() ? 0 : this.va.get() * VA_FACTOR / this.horasTrabalhadas.get());
 	})
 
 	this.autorun(() => {
@@ -68,7 +69,7 @@ Template.calculator.onCreated(function() {
 	})
 
 	this.autorun(() => {
-		this.valorPorHoraVT.set(this.vt.get() * VT_FACTOR / this.horasTrabalhadas.get());
+		this.valorPorHoraVT.set(!this.horasTrabalhadas.get() ? 0 : this.vt.get() * VT_FACTOR / this.horasTrabalhadas.get());
 	})
 
 	this.autorun(() => {
@@ -155,7 +156,7 @@ Template.calculator.events({
 	'input #dias-trabalhados': function(e, t) {
 		let el = $(e.target);
 		let input = $(el).val();
-		t.diasTrabalhados.set(input);
+		t.diasTrabalhados.set(parseFloat(input));
 	},	
 	'keyup #vh': function(e, t) {
 		let el = $(e.target);
