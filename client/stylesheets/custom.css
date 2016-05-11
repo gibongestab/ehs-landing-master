@@ -66,11 +66,6 @@ div.icon p{
   margin-top: 75px;
 }
 
-/*--
-ul li{
-   color:#6f6f6f;
-}
-*/
 
 .checklist i{
   margin-right: 10px;
@@ -113,8 +108,13 @@ li i.fa-circle{
   font-size:150px;
 }
 
+/*- DIFERENCIAIS -*/
 
-/*- CALCULADTOR */
+.mid_box {
+    margin-bottom: 30px;
+  }
+
+/*- CALCULATOR */
 
 .calculator {
   background-color: rgba(244, 117, 34, 0.9);
@@ -194,3 +194,4 @@ li i.fa-circle{
 .tooltip-inner {
     max-width: 60%;
 }
+

@@ -6,7 +6,7 @@ const PERDA_DE_PRODUTIVIDADE_VT_MINUTOS = 5;
 
 Template.calculator.onCreated(function() {
 	
-	let f = 1;
+	let f = 0;
 	let iDiasTrabalhados = 30 * f;
 	let iVh = 1500 * f;
 	let iVa = 1500 * f;
