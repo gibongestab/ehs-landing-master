@@ -196,6 +196,7 @@ Template.calculator.events({
 	'input #ta': function(e, t) {
 		let el = $(e.target);
 		let input = $(el).val();
+		console.log(input);
 		t.ta.set(input);
 	},	
 })
@@ -207,14 +208,18 @@ Template.calculator.onRendered(function() {
 		decimal: ',',
 		affixesStay: true		
 	}
-	$('#vh').maskMoney(options).maskMoney('mask', this.vh.get());
+	$('#vh').maskMoney(options).maskMoney('mask', '');
+	$('#vh').val('');
 	$('#va').maskMoney(options).maskMoney('mask', this.va.get());
+	$('#va').val('');
 	$('#vt').maskMoney(options).maskMoney('mask', this.vt.get());
+	$('#vt').val('');
 	$('#vp').maskMoney(options).maskMoney('mask', this.vp.get());
-	$('#dias-trabalhados').val(this.diasTrabalhados.get());
-	$('#to').val(this.to.get());
-	$('#n').val(this.n.get());
-	$('#tm').val(this.tm.get());
-	$('#ta').val(this.ta.get());
+	$('#vp').val('');
+	//$('#dias-trabalhados').val(this.diasTrabalhados.get());
+	//$('#to').val(this.to.get());
+	//$('#n').val(this.n.get());
+	//$('#tm').val(this.tm.get());
+	//$('#ta').val(this.ta.get());
 
 })

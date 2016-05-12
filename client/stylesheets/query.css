@@ -1,0 +1,26 @@
+
+@media only screen and (max-width: 480px) {
+
+.calculator {
+	width: 100%;
+}
+
+.calculator-col-3,
+.calculator-col-4 {
+	display:none;
+}
+
+.calculator-col-1,
+.calculator-col-2 {
+	padding: 2px;
+}
+
+.calculator-row-2 {
+	padding: 2px;
+}
+
+.calculator-br {
+	display: none;
+}
+
+}
