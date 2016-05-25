@@ -16,20 +16,20 @@
                     <li class="calculator-br"><br></li>
                     <li class="fixed">Dias trabalhados/mês</li>
                     <li class="fixed">Total de horas trabalhadas/mês</li>
-                    <li class="fixed">Salário do operador - VH</li>
-                    <li class="fixed">Salário do almoxarife - VA</li>
-                    <li class="fixed">Salário TST - VT</li>
-                    <li class="fixed">Tempo de deslocamento (min) - TO</li>
-                    <li class="fixed">Valor de produção/homem/hora - VP</li>
-                    <li class="fixed">Número de retiradas por dia - N</li>
-                    <li class="fixed">Tempo médio (min) - TM</li>
-                    <li class="fixed">Tempo de abastecimento da máquina - TA</li>
+                    <li class="fixed">Salário do operador</li>
+                    <li class="fixed">Salário do almoxarife</li>
+                    <li class="fixed">Salário TST</li>
+                    <li class="fixed">Tempo de deslocamento (min)</li>
+                    <li class="fixed">Valor de produção/homem/hora</li>
+                    <li class="fixed">Número de retiradas por dia</li>
+                    <li class="fixed">Tempo médio (min)</li>
+                    <li class="fixed">Tempo de abastecimento da máquina</li>
                   </ul>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 calculator-padding calculator-col-2">
                  <ul class="calculator-cell">
                   <li class="calculator-br"><br></li>
-                  <li class="mutable"><input type="text" class="calculator-input" id="dias-trabalhados" placeholder="Adicionar" value="{{diasTrabalhados}}"></li>
+                  <li class="mutable tip-calculator" data-toggle="tooltip" data-placement="right" title="Dias trabalhados por mês"><input type="text" class="calculator-input" id="dias-trabalhados" placeholder="Adicionar" value="{{diasTrabalhados}}"></li>
                   <li class="fixed">{{horasTrabalhadas}}</li>
                   <li class="mutable tip-calculator" data-toggle="tooltip" data-placement="right" title="Salário do operador sem encargos"><input type="text" class="calculator-input" id="vh" placeholder="Adicionar"></li>
                   <li class="mutable tip-calculator" data-toggle="tooltip" data-placement="right" title="Salário de um almoxarife sem encargos"><input type="text" class="calculator-input" id="va" placeholder="Adicionar"></li>
@@ -37,8 +37,8 @@
                   <li class="mutable tip-calculator" data-toggle="tooltip" data-placement="right" title="Tempo total que leva o operário até o almoxarifado. Retirada e volta"><input type="text" class="calculator-input" id="to" placeholder="Adicionar"></li>
                   <li class="mutable tip-calculator" data-toggle="tooltip" data-placement="right" title="Valor produzido pelo colaborador em 1 hora."><input type="text" class="calculator-input" id="vp" placeholder="Adicionar"></li>
                   <li class="mutable tip-calculator" data-toggle="tooltip" data-placement="right" title="Quantidade de vezes que o operador precisa se deslocar por dia para a retirada de um equipamento"><input type="text" class="calculator-input" id="n" placeholder="Adicionar"></li>
-                  <li class="mutable"><input type="text" class="calculator-input" id="tm" placeholder="Adicionar"></li>
-                  <li class="mutable"><input type="text" class="calculator-input" id="ta" placeholder="Adicionar"></li>
+                  <li class="mutable tip-calculator" data-toggle="tooltip" data-placement="right" title="Tempo que o Almoxarife leva para entregar uma peça a um usuário, incluindo o controle de estoque e entrega."><input type="text" class="calculator-input" id="tm" placeholder="Adicionar"></li>
+                  <li class="mutable tip-calculator" data-toggle="tooltip" data-placement="right" title="Tempo de abastecimento da máquina"><input type="text" class="calculator-input" id="ta" placeholder="Adicionar"></li>
                 </ul>
               </div>
               <div class="col-lg-3 col-md-3 calculator-padding calculator-col-3">
